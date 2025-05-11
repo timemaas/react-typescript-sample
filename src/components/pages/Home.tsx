@@ -1,5 +1,5 @@
 import {useState} from 'react';
-
+//const testURL = 'http://localhost:5000';
 const Home = () => {
     const [url, setUrl] = useState<string>('');
     const [message, setMessage] = useState<string>('');
@@ -11,7 +11,7 @@ const Home = () => {
             return;
         }
         try {
-            await fetch('http://localhost:5000/api/schedule', {
+            await fetch('https://react-typescript-sample.vercel.app/api/schedule', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'
