@@ -2,5 +2,6 @@
     "version": 2, 
     "builds": [
         { "src": "api/schedule.js", "use": "@vercel/node" }
-    ]
+    ],
+   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
