@@ -9,7 +9,7 @@ const PORT = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post('/api/schedule', async (req, res) => {
+app.post('https://react-typescript-sample.vercel.app/api/schedule', async (req, res) => {
     const { url, message, delay } = req.body;
     setTimeout(async () => {
         try {
