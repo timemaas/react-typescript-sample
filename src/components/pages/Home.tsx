@@ -11,7 +11,7 @@ const Home = () => {
             return;
         }
         try {
-            await fetch('https://react-typescript-sample.vercel.app/api/schedule', {
+            await fetch('/api/schedule', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'
